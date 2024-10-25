@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Square Root Result</title>
+</head>
+<body>
+  <h1>Square Root Result</h1>
+  <p>The square root is <%= @result %></p>
+</body>
+</html>
+
+
+<h1>Monthly Payment Result</h1>
+
+<p>APR: <%= format('%.4f', params[:apr].to_f) %>%</p>
+<p>Principal: <%= sprintf('$%.2f', params[:principal].to_f) %></p>
+<p>Number of years: <%= params[:years] %></p>
+<p>Monthly Payment: <%= sprintf('$%.2f', @monthly_payment) %></p>
