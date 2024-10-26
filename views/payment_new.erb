@@ -1,13 +1,15 @@
-<% layout :layout %>
-<form action="/payment/result" method="get">
+<h1>Calculate Payment</h1>
+
+<form action="/payment/result" method="post">
   <label for="apr">APR:</label>
   <input type="text" id="apr" name="apr" required>
-  
+
   <label for="years">Number of years:</label>
   <input type="text" id="years" name="years" required>
-  
+
   <label for="principal">Principal:</label>
   <input type="text" id="principal" name="principal" required>
-  
+
   <button type="submit">Calculate monthly payment</button>
 </form>
+

@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Square Root & Payment Calculator</title>
-</head>
-<body>
-  <h1>Calculator</h1>
-  <%= yield %>
-</body>
-</html>
+<h1>Calculate the square root of a number</h1>
+
+<form action="/square_root/results" method="post">
+  <label for="one">Enter a number</label>
+  <input id="one" type="text" name="users_number">
+  
+  <button>Calculate square root</button>
+</form>
