@@ -37,3 +37,10 @@ get ("/payment/result") do
   @formatted_payment = sprintf('%.2f', @monthly_payment)
   erb (:payment_result)
 end
+
+get '/random/result' do
+  min = params[:minimum].to_f
+  max = params[:maximum].to_f
+  random_number = rand(min..max)
+  erb :random_result, locals: { random_number: random_number }
+end
