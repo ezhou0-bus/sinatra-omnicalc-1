@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Square Root Calculator</title>
-<% layout :layout %>
-<form action="/square_root/result" method="get">
-  <label for="number">Enter a number:</label>
-  <input type="text" id="number" name="number" required>
-  <button type="submit">Calculate square root</button>
-</form>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Root & Payment Calculator</title>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <%= yield %>
+</body>
+</html>
